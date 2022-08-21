@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WallpaperActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorOnPrimary"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="7dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/bg_circle"
+                app:tint="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rl_download"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_circle"
+                android:layout_marginBottom="44dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/anim_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    app:lottie_autoPlay="false"
+                    android:padding="9dp"
+                    app:lottie_fileName="downloading.json"
+                    app:lottie_loop="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/anim_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="false"
+                    android:padding="9dp"
+                    app:lottie_fileName="finished.json" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
