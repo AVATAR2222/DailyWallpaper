@@ -25,10 +25,7 @@ allprojects {
 
         mavenLocal()
         mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
+        google()
         maven {
             url "http://dl.bintray.com/jlmd/maven"
         }

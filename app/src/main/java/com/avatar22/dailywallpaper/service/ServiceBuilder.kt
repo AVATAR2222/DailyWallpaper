@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ServiceBuilder {
 
-    private const val Url="http://192.168.1.5/Laravel-Wallpaper-Api/public/api/"
+    private const val Url="http://192.168.1.4/Laravel-Wallpaper-Api/public/api/"
 
     // Create OkHttp Client
     private val okHttp = OkHttpClient.Builder()
